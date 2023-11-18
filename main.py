@@ -22,7 +22,7 @@ for product in all_products:
     if product.find("div", class_="v-pb__old"):
         price = product.find('span', class_="v-pb__cur discount")
         title = product.find("span", class_="product-card__title")
-        print(len(all_products))
+        print(price.text, title.text)
 
 
 
